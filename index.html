@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Queue System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>Smart Queue System</h1>
+    <p class="tagline">No more standing in lines!</p>
+
+    <div class="cards">
+
+        <!-- User Card -->
+        <div class="card user">
+            <h2>User Panel</h2>
+            <button onclick="takeToken()">Take Token</button>
+            <div class="token-box" id="userToken">---</div>
+        </div>
+
+        <!-- Admin Card -->
+        <div class="card admin">
+            <h2>Admin Panel</h2>
+            <button onclick="nextToken()">Next Token</button>
+            <div class="token-box" id="currentToken">---</div>
+        </div>
+
+    </div>
+
+    <!-- Queue Display -->
+    <div class="queue-section">
+        <h2>Live Queue</h2>
+        <div id="queueList" class="queue-list"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
